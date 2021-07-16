@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 
+		사용자 입력 처리 태그
+		form : 사용자가 화면에서 입력한 데이터를 전송할 때 사용
+			action : 사용자가 입력한 데이터를 처리할 서버의 페이지
+			method : 사용자가 입력데이터를 서버에 전송할 때 방식 결정
+				: GET(URL에 포함된다), POST(URL에 포함되지 않는다. BODY)
+	 -->
+	 <form method="get" action="result.html">
+	 
+	 	<!-- 
+	 		hidden : 사용자에게 보이지 않는다.
+	 			   : 개발자가 프로그램에서 사용하기 위해서 별도로 설정하는 값들
+	 	 -->
+	 	<input type="hidden" name="mode" value="regist" />
+	 
+	 	<!-- 
+	 		사용자 입력 받기
+	 		input
+	 			type : 사용자에게 입력받는 형태를 지정한다.
+	 				: submit, text, password, radio, checkbox, file, button, reset, date, ....
+	 		textarea
+	 		select
+	 	 -->
+	 	 <div>
+	 	 	<input type="text" name="id" placeholder="아이디를 입력하세요" />
+	 	 </div>
+<!-- 	 	 readonly : 서버로 값이 전송됨 -->
+<!-- 		 disabled : 서버로 값이 전송되지 않음 -->
+	 	 <div>
+	 	 	<input type="text" name="id2" readonly placeholder="아이디를 입력하세요" size="30" value="고정값 전송" />
+	 	 </div>
+	 	 <div>
+	 	 	<input type="text" name="id3" disabled placeholder="아이디를 입력하세요" size="30" value="서버로 전송자체가 안됨" />
+	 	 </div>
+	 	 <div>
+	 	 	<input type="password" name="pass" />
+	 	 </div>
+	 	 <!-- checkbox와 radio는 value 속성을 정해주어야 한다. 그렇지 않으면 on이라는 값이 넘어간다. -->
+	 	 <div>
+	 	 	<input type="checkbox" checked name="lang1" value="java"/>
+	 	 	Java
+	 	 	<input type="checkbox" name="lang1" value="sql"/>
+	 	 	SQL
+	 	 	<input type="checkbox" checked name="lang1" value="html"/>
+	 	 	HTML
+	 	 </div>
+	 	 <!-- radio의 경우 name이 같아야(lang2) 여러 개 중에 1개 선택 가능 -->
+	 	 <!-- 여러개 checked 되어 있으면, 마지막 radio 버튼이 선택됨. 덮어쓰기 개념 -->
+	 	 <div>
+	 	 	<input type="radio" checked name="lang2" value="java"/>
+	 	 	Java
+	 	 	<input type="radio" name="lang2" value="sql"/>
+	 	 	SQL
+	 	 	<input type="radio" checked name="lang2" value="html"/>
+	 	 	HTML
+	 	 </div>
+	 	 <div>
+	 	 	<input type="file" name="attach" />
+	 	 </div>
+	 	 <textarea name="content"></textarea>
+	 	 <div>
+			<select name="lang3">
+				<option>Java</option>
+				<option>SQL</option>
+				<option selected>HTML</option>
+			</select> 
+	 	 </div>
+	 	 <div>
+	 	 	<input type="submit" value="등록" />
+	 	 	<input type="reset" value="취소" />
+	 	 	<input type="button" value="클릭" />
+	 	 </div>
+	 	 <div>
+	 	 	<!-- button 엘리먼트에 type 속성을 생략하면, submit이 적용  -->
+	 	 	<button>등록</button>
+	 	 	<button type="submit">등록</button>
+	 	 	<button type="reset">취소</button>
+	 	 	<button type="button">클릭</button>
+	 	 </div>
+	 </form>
+</body>
+</html>

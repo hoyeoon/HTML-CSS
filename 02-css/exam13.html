@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	/*
+		상대적 크기 지정
+			%, em : 부모기준, rem : html(루트)엘리먼트 기준
+		절대적 크기 지정
+			px(컴퓨터 점 하나를 표현)
+		상수값 이용
+			xx-small(9px), x-small(10px), small(13px)
+			xx-large(32px), x-large(24px), large(18px)
+			medium(16px)
+		
+	*/
+	
+	div{
+		font-size: 16px;
+	}
+	.fs__percent {
+		font-size: 150%;
+		color: rgb(99, 10, 255);
+	}
+	.fs__em {
+		font-size: 1.5em;
+		color: rgba(255, 200, 150, 0.8);
+	}
+	.fs__constant {
+		font-size: x-large;
+		color: #ff0;
+	}
+	.fs__px {
+		font-size: 24px;
+		color: #fe02f1;
+	}
+</style>
+</head>
+<body>
+	<h1>글자 크기</h1>
+	<div>
+		<p class="fs__percent">fs__percent</p>
+		<p class="fs__em">fs__em</p>
+		<p class="fs__constant">fs__constant</p>
+		<p class="fs__px">fs__px</p>
+	</div>
+</body>
+</html>

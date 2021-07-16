@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	
+	p{
+		font-size: 24px;
+	}
+	.td__over {
+		text-decoration: overline;
+	}
+	.td__none {
+		text-decoration: none;
+	}
+	.td__line {
+		text-decoration: line-through;
+	}
+	.td__under {
+		text-decoration: underline;
+	}
+	/* 기사처럼 마우스갖다대면 라인 생기도록 */
+	a:hover{
+		text-decoration: underline;
+	}
+</style>
+</head>
+<body>
+	<h1>텍스트 꾸미기</h1>
+	<div>
+		<a href="#1" class="td__none">기사링크</a>
+		<p class="td__over">public static protected private</p>
+		<p class="td__none">public static protected private</p>
+		<p class="td__line">코딩 공부했음</p>
+		<p class="td__under">코딩 공부했음</p>
+	</div>
+</body>
+</html>

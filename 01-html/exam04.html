@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 
+		a(앵커)
+		: 링크를 걸어주는 태그
+		: 텍스트 또는 이미지에 사용
+		
+		<a href="어디로 이동할지??">네이버</a>
+		href : 속성, 시작태그에만 사용 가능
+		target : 창을 어디에 띄울지 결정.
+			_self : 창 변환 
+			_blank : 새 창
+			aaa : 없으면 새 창, 있으면 존재하는 창에서 다시 띄움
+			
+		a : 같은 문서 내에서 특정한 위치로 이동할 수도 있다. href="#"
+	 -->
+	 <h2 id="top">[[아이디가 top인 위치]]</h2>
+	 <h2><a>네이버</a></h2>
+	 <h2><a href="http://www.naver.com">네이버</a></h2>
+	 <h2><a href="http://www.naver.com" target="_self">네이버(_self)</a></h2>
+	 <h2><a href="http://www.naver.com" target="_blank">네이버(_blank)</a></h2>
+	 <h2><a href="http://www.naver.com" target="aaa">네이버(aaa)</a></h2>
+	 
+	 <h2 id="middle">[[아이디가 middle인 위치]]</h2>
+	 <h1>test</h1>
+	 <h1>test</h1>
+	 <h1>test</h1>
+	 <h1>test</h1>
+	 <h1>test</h1>
+	 <h1>test</h1>
+	 <h1>test</h1>
+	 <h1>test</h1>
+	 <h1>test</h1>
+	 <h1>test</h1>
+	 <!-- href="#{id}" 문서 내에서 아이디에 해당하는 엘리먼트 위치로 이동 -->
+	 <h2><a href="#top">top</a></h2>
+	 <h2><a href="#1">id = 1인 위치가 없으므로 이동하지 않음</a></h2>
+	 <h2><a href="#">아이디없음. 아이디를 못찾으니깐 맨 위로 이동함</a></h2>
+	 <h2><a href="#middle">middle</a></h2>
+</body>
+</html>

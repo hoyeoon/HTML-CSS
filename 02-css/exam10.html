@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- 그룹 선택자 -->
+<!-- h2, p : h2{...}, p{...}를 합친 것. 같은 css 적용 -->
+<style>
+	.abc,  h2, p{
+		color: red;
+		font-size: 40px;
+	}
+</style>
+</head>
+<body>
+	<h2>아이디 선택자</h2>
+	<p>테스트 - 1</p>
+	<div>
+		<div>
+			<p>테스트 - 2</p>
+		</div>
+	</div>
+	<div>
+		<p>테스트 - 3</p>
+		<div>영역을 잡을 때 주로 사용</div>
+	</div>
+</body>
+</html>

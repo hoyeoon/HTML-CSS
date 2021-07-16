@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- 자식 선택자 -->
+<!-- body > p : body 태그 안에 있는 p 엘리먼트만 적용 -->
+<style>
+	body > p {
+		color: red;
+	}
+	body > div > p{
+		border: 1px solid blue;
+	}
+	body > div > div > p{
+		font-size: 30px;
+	}
+	body > *{
+		
+	}
+	#abc > .eee > div{
+	
+	}
+</style>
+</head>
+<body>
+	<h2>아이디 선택자</h2>
+	<p>테스트 - 1</p>
+	<div>
+		<div>
+			<p>테스트 - 2</p>
+		</div>
+	</div>
+	<div>
+		<p>테스트 - 3</p>
+		<div>영역을 잡을 때 주로 사용</div>
+	</div>
+</body>
+</html>

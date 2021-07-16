@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	table{
+		width: 500px;
+	}
+
+	table, th, td {
+		border: 1px solid #444;
+	}
+</style>
+</head>
+<body>
+	<!-- 
+		table 태그
+		table
+			// 아래 3개 태그 생략하고 tr부터 작성하면 브라우저에서 tbody 태그를 자동생성하고 하위에 작성한 태그를 넣어서 표현한다.
+			tbody, thead, tfoot - 생략 가능
+				tr
+					th, td
+	 -->
+	 <table>
+	 	<tr>
+	 		<th>th</th>
+	 		<td>td</td>
+	 	</tr>
+	 </table>
+	 
+	 <table>
+	 	<tr>
+	 		<th>지역</th>
+	 		<th>반</th>
+	 		<th>인원(명)</th>
+	 	</tr>
+	 	<tr>
+	 		<td>서울</td>
+	 		<td colspan="2">3반 ~ 15반</td>
+	 	</tr>
+	 	<tr>
+	 		<td>대전</td>
+	 		<td colspan="2">3반 ~ 6반</td>
+	 	</tr>
+	 	<tr>
+	 		<td rowspan="2">구미</td>
+	 		<td>3반</td>
+	 		<td>22명</td>
+	 	</tr>
+	 	<tr>
+	 		<td>4반</td>
+	 		<td>23명</td>
+	 	</tr>
+	 </table>
+</body>
+</html>

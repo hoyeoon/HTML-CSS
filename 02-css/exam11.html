@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- : -> 가상 선택자(ex. hover...) -->
+<!-- hover : h2 엘리먼트에 마우스가 올라가면 css 효과를 준다. -->
+<style>
+	h2:hover{
+		border: 3px dotted #746;
+		background: #089;
+	}
+	table{
+		width: 500px;
+	}
+	table, th, td{
+		border: 1px solid black;
+		padding: 5px;
+	}
+	tr:hover{
+		background: black;
+		color: white;
+	}
+	
+</style>
+</head>
+<body>
+	<h2>아이디 선택자</h2>
+	<table>
+		<tr>
+			<th>번호</th>
+			<th>제목</th>
+			<th>글쓴이</th>
+			<th>조회수</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>연습1</td>
+			<td>홍길동</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>연습2</td>
+			<td>김철수</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>연습3</td>
+			<td>오연</td>
+			<td>3</td>
+		</tr>
+	</table>
+</body>
+</html>
